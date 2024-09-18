@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>PAYCOMET TPV Virtual</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Estilos CSS -->
+        <link rel="stylesheet" href="css/styles.css" >
+
+        <!-- Fonts Google -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    </head>
+    <body class="full-height-layout">
+
+        <header class="header">
+            <nav class="navbar">
+                <a href="#">
+                    <img src="images/PAYCOMET-Logo-Default.svg" class="custom-logo-header" alt="Logo PAYCOMET">
+                </a>
+                <div class="language-selector">
+                    <select name="language" id="language-select">
+                        <option value="es">Español</option>
+                    </select>
+                    <img src="images/ES.svg" alt="ES">
+                    <a href="#">
+                        <img src="images/next-icon.svg" alt="Next" class="icon-next">
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <div class="container">
+            <!-- Contenido del lado izquierdo -->
+            <div class="column">
+                <div class="column-left">
+                    <p>Importe del pedido</p>
+                    <h1>100.00 €</h1>
+                    <p>El comercio <span>Bankstore</span> solicita una operación con referencia <span>#20220616123806</span></p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="column-right">
+                    <!-- Contenido del lado derecho -->
+                    <div class="content-card">
+                        <p>Datos de la tarjeta</p>
+                        <div class="flags">
+                            <img src="images/Card-Flags-visa.svg" alt="Visa">
+                            <img src="images/Card-Flags-master.svg" alt="Mastercard">
+                            <img src="images/Card-Flags-am-ex.svg" alt="American Express">
+                            <img src="images/Card-Flags.svg" alt="Otros">
+                            <img src="images/Card-Flags-jcb.svg" alt="JCB">
+                            <img src="images/Card-Flags-union-pay.svg" alt="UnionPay">
+                        </div>
+                    </div>
+                    <div class="input-pay-card">
+                        <img src="images/Card-Flags-gray.svg" alt="Tarjeta" >
+                        <input type="text" name="card-num" placeholder="Número de tarjeta" id="credit-card" minlength="16" maxlength="16">
+                        <input type="text" name="MM/AA" placeholder="MM/AA" id="MM/AA" minlength="5" maxlength="5">
+                        <input type="text" name="CVC" placeholder="CVC" id="CVC" minlength="3" maxlength="3">
+                    </div>
+                    <button type="submit" class="pay-button pay-blue">
+                        <span>Paga con tarjeta 100.00€</span>
+                        <span style="display:none;">Sending…</span>
+                    </button>
+                    <button type="submit" class="pay-button">
+                        <span>Pagar con</span>
+                        <img src="images/Googlepay.svg" alt="Google Pay">
+                    </button>
+                    <button type="submit" class="pay-button">
+                        <span>Pagar con</span>
+                        <img src="images/Applepay.svg" alt="Apple Pay">
+                    </button>
+                    <button type="submit" class="pay-button mb-0">
+                        <span>Pagar con</span>
+                        <img src="images/clicktopay.svg" alt="Click to Pay">
+                        <img src="images/mastercard.svg" alt="Mastercard">
+                    </button>
+                    <div class="text-container">
+                        <span class="line-text">O paga con otro método alternativo</span>
+                    </div>
+                    <div class="content-payment-method">
+                        <div class="payment-method-button">
+                            <button class="payment-box-button">
+                                <a href="#"><img src="images/paypal.svg" height="" alt="PayPal"></a>
+                            </button>
+                            <p class="">Paypal</p>
+                        </div>
+                        <div class="payment-method-button">
+                            <button class="payment-box-button">
+                                <a href="#"><img src="images/klarma.svg" height="" alt="Klarna"></a>
+                            </button>
+                            <p>Klarna</p>
+                        </div>
+                        <div class="payment-method-button">
+                            <button class="payment-box-button">
+                                <a href="#"><img src="images/bizum.svg" height="" alt="Bizum"></a>
+                            </button>
+                            <p>Bizum</p>
+                        </div>
+                        <div class="payment-method-button">
+                            <button class="payment-box-button">
+                                <a href="#"><img src="images/skrill.svg" height="" alt="Skrill"></a>
+                            </button>
+                            <p>Skrill</p>
+                        </div>
+                    </div>
+                    <img src="images/PAYCOMET-Logo-Default.svg" class="custom-logo" alt="Logo PAYCOMET">
+                </div>
+            </div>
+        </div>
+        <footer class="cols-4 footer-column">
+            <div class="footer-contact">
+                <div class="contact">
+                    <p>77976556b - Jhon Doe <br> Dirección: Calle Inventada - 08080 Barcelona <br> Teléfono: 666666666 - Email: usuario@proveedor.com</p>
+                </div>
+                <div class="contact-link">
+                    <a href="#">Enlace 1</a>
+                    <a href="#">Enlace 2</a>
+                    <a href="#">Enlace 3</a>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
